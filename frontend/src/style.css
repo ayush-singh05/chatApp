@@ -1,0 +1,118 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+}
+/* parent div  */
+.container {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+
+}
+/* login form */
+.form {
+    display: flex;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 20px;
+    padding: 19px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* input field parent div  */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 8px 0;
+    width: 20rem;
+
+   
+}
+
+.input-container > label {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #565454;
+
+}
+.input-container > input{
+    border: none;
+    border-bottom: 1px solid rgb(173, 167, 167);
+    outline: none;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+.input-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  max-width: 20rem;
+}
+.btn {
+    width: 20rem;
+    border: none;
+    background-color: rgb(46, 177, 177);
+    color: #FFF;
+    border-radius: 18px;
+    padding: 10px ;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.forget-password-container {
+    font-size: 10px;
+    display: flex;
+    justify-content: end;
+    color: #565454;
+    margin-top: -4px;
+}
+
+.input-user {
+    font-size: 14px;
+    color: #565454;
+    margin: 15px 0;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.input-user:hover {
+    color: #181818;
+    text-decoration: none;
+
+    
+}
+
+/* loader */
+#loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 20px;
+    height: 20px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .hidden {
+    display: none;
+  }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+</head>
+<body>
+    <div class="container ">
+        <!-- login form  -->
+        <form class="form"  >
+            <h3>Login</h3>
+
+            <!-- Emai field -->
+            <div class="input-container">
+                <label for="email" >Email</label>
+                <input type="text" name="email" placeholder="Enter your username or Email" />
+            </div>
+            <!-- Password field -->
+            <div class="input-container ">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter your Password" />
+            </div>
+            <div class="input-container">
+                <p class="forget-password-container">
+                    Forgot password?
+                </p>
+
+            </div>
+           <!-- submit button  -->
+            <div class="input-btn">
+                <button type="submit" class="btn">Login</button>
+            </div>
+
+            <div class="input-user">
+                <a href="./signup/register.html">
+                    <span>Not an user?</span>
+
+                </a>
+            </div>
+        </form>
+    </div>
+    <!-- loader  -->
+    <div id="loader" class="hidden"></div> <!-- Loader element -->
+</body>
+<script src="./script.js"></script>
+</html>
