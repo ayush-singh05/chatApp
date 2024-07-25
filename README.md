@@ -39,7 +39,7 @@ npm install
 ### Set Up Environment Variables
 * Create a .env file in the root of your project and add the following:
 
-env
+.env.local
 ```bash
 
 PORT=8000
